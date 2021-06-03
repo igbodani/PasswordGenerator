@@ -7,15 +7,7 @@ public class PasswordGenerator {
     final static String NUMBERS = "123456789";
     final static String UPPERCHAR = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     final static String CHAR = "abcdefghijklmnopqrstuvwxyz";
-    final static String pass = NUMBERS+UPPERCHAR+CHAR;
-
-    public static void main(String[] args) {
-       // System.out.println(pass);
-        Random ra = new Random();
-        PasswordGenerator p = new PasswordGenerator();
-        System.out.println(p.generate(8));
-
-    }
+    final static String pass = NUMBERS + UPPERCHAR + CHAR;
 
 
     public static StringBuilder generate(int length){

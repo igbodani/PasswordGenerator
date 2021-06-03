@@ -7,35 +7,17 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class App extends Application {
+public class App extends Application{
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
-
-
-        TextField lengthOfPassword = new TextField();
-        int length = Integer.parseInt(lengthOfPassword.getText());
-        PasswordField passwordField;
-
-
-        Button generate = new Button("Generate");
-        generate.setAlignment(Pos.BOTTOM_RIGHT);
-        generate.setOnAction(event -> {
-            PasswordGenerator.generate(length);
-        });
-
-
-
-        BorderPane pane = new BorderPane();
-        Scene scene = new Scene(pane, 600, 400);
-        primaryStage.setScene(scene);
-        primaryStage.show();
 
     }
 }

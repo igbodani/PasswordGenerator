@@ -40,7 +40,9 @@ tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
 }
-javafx{
-    version = '15.0.1'
+
+
+javafx {
+    version = "15.0.1"
     modules = ['javafx.controls']
 }
